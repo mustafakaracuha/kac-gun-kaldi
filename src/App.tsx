@@ -102,7 +102,6 @@ export default function App() {
 
   const formatNumber = (num = 0) => (num < 10 ? `0${num}` : num);
 
-  // Özel günü tıklama işlevi
   const handleSpecialDateSelect = (
     date: string,
     label: string,
@@ -143,9 +142,15 @@ export default function App() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-50 to-gray-200 p-4">
       <div className="bg-white rounded-xl shadow-lg max-w-lg w-full p-10 border border-gray-100">
-        <p className="w-full text-center mb-6 text-indigo-700 font-semibold text-xl">
-          Kaç gün kaldı ?
-        </p>
+        <div className="w-full flex items-center justify-between mb-7">
+          <p className="text-indigo-700 font-semibold text-xl">
+            Kaç gün kaldı ?
+          </p>
+          <p className="text-gray-500 text-sm">
+            Bugün: {formatDate(new Date())}
+          </p>
+        </div>
+
         <div className="mb-6 text-center">
           <div className="grid grid-cols-4 overflow-auto overflow-x-auto mb-8 gap-3">
             {specialDates
@@ -168,8 +173,8 @@ export default function App() {
                 );
               })}
           </div>
-          <div className="flex flex-col items-center justify-center mb-4 gap-3">
-            <div className="text-5xl">{icon}</div>
+          <div className="flex flex-col items-center justify-center mb-3 gap-3">
+            <div className="text-5xl mt-4 mb-2">{icon}</div>
 
             <input
               type="text"
@@ -226,9 +231,6 @@ export default function App() {
               </div>
             )}
           </div>
-          <p className="text-gray-500 text-sm">
-            Bugün: {formatDate(new Date())}
-          </p>
         </div>
 
         <div className="mb-6">
