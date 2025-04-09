@@ -140,8 +140,8 @@ export default function App() {
   const toggleDatePicker = () => setIsDatePickerOpen(!isDatePickerOpen);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-50 to-gray-200 p-4">
-      <div className="bg-white rounded-xl shadow-lg max-w-lg w-full p-10 border border-gray-100">
+    <div className="min-h-screen flex flex-col items-center justify-center max-sm:bg-white bg-gradient-to-br from-gray-50 to-gray-200 p-4">
+      <div className="bg-white max-sm:bg-transparent rounded-xl max-sm:shadow-none shadow-lg max-w-lg w-full max-sm:p-0 p-10 border border-gray-100">
         <div className="w-full flex items-center justify-between mb-7">
           <p className="text-indigo-700 font-semibold text-xl">
             Kaç gün kaldı ?
@@ -165,7 +165,7 @@ export default function App() {
                     className={`px-5 py-1 cursor-pointer rounded-lg text-xs border border-gray-200 transition-colors ${
                       isSelected
                         ? "bg-indigo-600 text-white border-blue-600"
-                        : "bg-gray-100 text-gray-800 hover:bg-gray-200"
+                        : "bg-gray-100 max-sm:bg-white text-gray-800 hover:bg-gray-200"
                     }`}
                   >
                     {label}
@@ -256,7 +256,7 @@ export default function App() {
         <div className="grid grid-cols-4 gap-3 mb-6">
           {["GÜN", "SAAT", "DAKİKA", "SANİYE"].map((label, index) => (
             <div className="text-center" key={label}>
-              <div className="bg-gray-100 rounded-lg py-3 px-1">
+              <div className="bg-gray-100 max-sm:bg-white rounded-lg py-3 px-1">
                 <span
                   className={`text-3xl font-mono font-medium text-gray-800 ${
                     label === "SANİYE" ? "animate-pulse" : ""
