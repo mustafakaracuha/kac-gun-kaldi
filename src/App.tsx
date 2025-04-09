@@ -141,7 +141,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center max-sm:bg-white bg-gradient-to-br from-gray-50 to-gray-200 p-4">
-      <div className="bg-white max-sm:bg-transparent rounded-xl max-sm:shadow-none shadow-lg max-w-lg w-full max-sm:p-0 p-10 border border-gray-100">
+      <div className="bg-white max-sm:bg-transparent rounded-xl max-sm:shadow-none shadow-lg max-w-lg w-full max-sm:p-0 p-10 max-sm:border-none border border-gray-100">
         <div className="w-full flex items-center justify-between mb-7">
           <p className="text-indigo-700 font-semibold text-xl">
             Kaç gün kaldı ?
