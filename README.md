@@ -1,77 +1,73 @@
-# 🎉 Kaç Gün Kaldı? - React Geri Sayım Uygulaması
+# 🎉 How Many Days Left?
 
-Bu uygulama sayesinde özel günlerinize kaç gün kaldığını şık ve kullanıcı dostu bir arayüzle takip edebilirsiniz. Tarih seçimi, ikon seçimi ve başlık düzenleme gibi özellikler sunar. Veriler tarayıcı `localStorage`'ında saklanır, böylece sayfa yenilense bile bilgiler kaybolmaz.
+With this application, you can track how many days are left until your special days with a stylish and user-friendly interface. It offers features such as date selection, icon selection and title editing. The data is stored in the browser `localStorage`, so the information is not lost even if the page is refreshed.
 
-## 🚀 Özellikler
+## 🚀 🚀 Features
 
-- 📅 Geri sayım başlatma (varsayılan olarak 30 Ağustos)
-- 🇹🇷 Özel günlerden seçim yapma (bayramlar, resmi tatiller vs.)
-- 🎨 İkon seçimi (Emoji picker ile)
-- ✏️ Başlık düzenleme
-- 🗓️ Tarih seçici (güncelleme imkanı)
-- 💾 Verileri `localStorage`'a kaydetme
-- 🧠 Otomatik olarak kalan süreyi hesaplama (gün, saat, dakika, saniye)
-- 📱 Mobil uyumlu ve responsive tasarım (Tailwind CSS kullanılarak)
+- 📅 Start countdown (August 30 by default)
+- 🇹🇷 Choose from special days (holidays, public holidays, etc.) - 🎨 Choose icon )
+- 🎨 Icon selection (with Emoji picker)
+- ✏️ Title editing
+- 🗓️ Date picker (update possibility)
+- 💾 Save data to `localStorage`
+- 🧠 Automatically calculate remaining time (day, hour, minute, second)
+- 📱 Mobile-friendly and responsive design (using Tailwind CSS)
 
-## 📸 Ekran Görüntüsü
+## 📸 Screenshot
 
-![Ekran Görüntüsü](screenshot.png)
+![Screenshot](screenshot.png)
 
-## 🔧 Kurulum
+## 🔧 Installation
 
-1. Bu projeyi klonlayın:
+1. Clone this project:
 
 ```bash
 git clone https://github.com/kullaniciadi/kac-gun-kaldi.git
 cd kac-gun-kaldi
 ```
 
-2. Gerekli paketleri yükleyin:
+2. Install the required packages:
 
-```bash
+``bash
 npm install
 ```
 
-3. Uygulamayı başlatın:
+3:
 
 ```bash
 npm run dev
-# veya
+# or
 npm start
 ```
 
-4. Tarayıcıda açın: `http://localhost:3000`
+4. Open in browser: `http://localhost:3000`
 
-## 📁 Proje Yapısı
+## 📁 Project Structure
 
 ```
-📦 kac-gun-kaldi
-├── public
-│   └── ...
+Ӧ kac-gun-kaldi
+├ ├─── public
+│ └── ...
 ├── src
-│   ├── App.tsx        # Ana bileşen (geri sayım ve ayarlar burada)
-│   └── main.tsx       # React uygulamasının giriş noktası
+│ ├─── App.tsx # Main component (countdown and settings here)
+│ └── main.tsx # React app entry point
 ├── package.json
-└── README.md
+└── README. md
 ```
 
-## 🛠️ Kullanılan Teknolojiler
+## 🛠️ Technologies Used
 
 - React (Functional Components & Hooks)
-- TypeScript (isteğe bağlı)
+- TypeScript (optional)
 - Tailwind CSS
 - LocalStorage API
 - Emoji / Icon picker
-- Date utilities (`Date` objesi kullanılarak)
+- Date utilities (using `Date` object)
 
-## 🌟 Katkı Sağlayın
+## 🌟 Contribute
 
-İyileştirme önerileriniz veya katkılarınız varsa lütfen bir PR (pull request) gönderin veya [issue](https://github.com/kullaniciadi/kac-gun-kaldi/issues) oluşturun.
+If you have suggestions for improvement or contributions please send a PR (pull request) or create an [issue](https://github.com/kullaniciadi/kac-gun-kaldi/issues).
 
-## 📜 Lisans
+## 📜 License
 
-MIT Lisansı
-
----
-
-Hazırlayan: [Adınız](https://github.com/mustafakaracuha) ❤️  
+MIT License
