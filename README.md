@@ -13,16 +13,19 @@ With this application, you can track how many days are left until your special d
 - 🧠 Automatically calculate remaining time (day, hour, minute, second)
 - 📱 Mobile-friendly and responsive design (using Tailwind CSS)
 
-## 📸 Screenshot
+## 📸 Screenshots
 
-![Screenshot](screenshot.png)
+<p float="left">
+  <img src="screenshot-home.png" alt="Homepage Screenshot" width="48%" />
+  <img src="screenshot-invoice.png" alt="Invoice Detail Screenshot" width="48%" />
+</p>
 
 ## 🔧 Installation
 
 1. Clone this project:
 
 ```bash
-git clone https://github.com/kullaniciadi/kac-gun-kaldi.git
+git clone https://github.com/mustafakaracuha/kac-gun-kaldi.git
 cd kac-gun-kaldi
 ```
 
@@ -40,14 +43,12 @@ npm run dev
 npm start
 ```
 
-4. Open in browser: `http://localhost:3000`
+4. Open in browser: `http://localhost:5173`
 
 ## 📁 Project Structure
 
 ```
-Ӧ kac-gun-kaldi
-├ ├─── public
-│ └── ...
+kac-gun-kaldi
 ├── src
 │ ├─── App.tsx # Main component (countdown and settings here)
 │ └── main.tsx # React app entry point
@@ -66,7 +67,7 @@ npm start
 
 ## 🌟 Contribute
 
-If you have suggestions for improvement or contributions please send a PR (pull request) or create an [issue](https://github.com/kullaniciadi/kac-gun-kaldi/issues).
+If you have suggestions for improvement or contributions please send a PR (pull request) or create an [issue](https://github.com/mustafakaracuha/kac-gun-kaldi/issues).
 
 ## 📜 License
 
