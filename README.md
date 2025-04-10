@@ -1,54 +1,77 @@
-# React + TypeScript + Vite
+# 🎉 Kaç Gün Kaldı? - React Geri Sayım Uygulaması
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu uygulama sayesinde özel günlerinize kaç gün kaldığını şık ve kullanıcı dostu bir arayüzle takip edebilirsiniz. Tarih seçimi, ikon seçimi ve başlık düzenleme gibi özellikler sunar. Veriler tarayıcı `localStorage`'ında saklanır, böylece sayfa yenilense bile bilgiler kaybolmaz.
 
-Currently, two official plugins are available:
+## 🚀 Özellikler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📅 Geri sayım başlatma (varsayılan olarak 30 Ağustos)
+- 🇹🇷 Özel günlerden seçim yapma (bayramlar, resmi tatiller vs.)
+- 🎨 İkon seçimi (Emoji picker ile)
+- ✏️ Başlık düzenleme
+- 🗓️ Tarih seçici (güncelleme imkanı)
+- 💾 Verileri `localStorage`'a kaydetme
+- 🧠 Otomatik olarak kalan süreyi hesaplama (gün, saat, dakika, saniye)
+- 📱 Mobil uyumlu ve responsive tasarım (Tailwind CSS kullanılarak)
 
-## Expanding the ESLint configuration
+## 📸 Ekran Görüntüsü
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![Ekran Görüntüsü](screenshot.png)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🔧 Kurulum
+
+1. Bu projeyi klonlayın:
+
+```bash
+git clone https://github.com/kullaniciadi/kac-gun-kaldi.git
+cd kac-gun-kaldi
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Gerekli paketleri yükleyin:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+3. Uygulamayı başlatın:
+
+```bash
+npm run dev
+# veya
+npm start
+```
+
+4. Tarayıcıda açın: `http://localhost:3000`
+
+## 📁 Proje Yapısı
+
+```
+📦 kac-gun-kaldi
+├── public
+│   └── ...
+├── src
+│   ├── App.tsx        # Ana bileşen (geri sayım ve ayarlar burada)
+│   └── main.tsx       # React uygulamasının giriş noktası
+├── package.json
+└── README.md
+```
+
+## 🛠️ Kullanılan Teknolojiler
+
+- React (Functional Components & Hooks)
+- TypeScript (isteğe bağlı)
+- Tailwind CSS
+- LocalStorage API
+- Emoji / Icon picker
+- Date utilities (`Date` objesi kullanılarak)
+
+## 🌟 Katkı Sağlayın
+
+İyileştirme önerileriniz veya katkılarınız varsa lütfen bir PR (pull request) gönderin veya [issue](https://github.com/kullaniciadi/kac-gun-kaldi/issues) oluşturun.
+
+## 📜 Lisans
+
+MIT Lisansı
+
+---
+
+Hazırlayan: [Adınız](https://github.com/mustafakaracuha) ❤️  

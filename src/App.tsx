@@ -231,6 +231,11 @@ export default function App() {
               </div>
             )}
           </div>
+          {targetDate < new Date() && (
+            <p className="text-sm text-red-500 mt-2">
+              Geçmiş bir tarih seçtiniz. Lütfen gelecekteki bir tarih seçin.
+            </p>
+          )}
         </div>
 
         <div className="mb-6">
