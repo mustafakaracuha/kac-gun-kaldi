@@ -16,8 +16,8 @@ With this application, you can track how many days are left until your special d
 ## 📸 Screenshots
 
 <p float="left">
-  <img src="screenshot-home.png" alt="Homepage Screenshot" width="48%" />
-  <img src="screenshot-invoice.png" alt="Invoice Detail Screenshot" width="48%" />
+  <img src="https://github.com/mustafakaracuha/kac-gun-kaldi/blob/main/src/assets/app.png" alt="Homepage Screenshot" width="48%" />
+  <img src="https://github.com/mustafakaracuha/kac-gun-kaldi/blob/main/src/assets/icon.png" alt="Invoice Detail Screenshot" width="48%" />
 </p>
 
 ## 🔧 Installation
